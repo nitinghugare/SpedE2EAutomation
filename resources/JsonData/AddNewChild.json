@@ -1,0 +1,12 @@
+//https://www.geeksforgeeks.org/parse-json-java/
+{
+	"QA": {
+		"URL":"https://spedathome.com/",
+		"username": "John",
+		"password": "Smith",
+		"streetAddress": "21 2nd Street",
+		"city": "New York",
+		"state": "NY",
+		"postalCode": 10021
+	}
+}
