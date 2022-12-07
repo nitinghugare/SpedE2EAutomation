@@ -16,8 +16,9 @@ import cucumber.api.testng.*;
         features = "./features/"
         ,glue = {"com.spedtestautomation.StepDef"}
         ,tags = {"@TestDemo"}
-        ,plugin = { "pretty"}
-        ,monochrome = true)
+        ,plugin = { "pretty", "html:target/cucumber-reports" , "json:target/cucumber.json"}
+        ,monochrome = true
+        )
 public class TestRunner extends WebDriverManager {
     private TestNGCucumberRunner testNGCucumberRunner;
     
