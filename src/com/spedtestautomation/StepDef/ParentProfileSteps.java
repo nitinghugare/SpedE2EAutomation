@@ -12,7 +12,7 @@ import cucumber.api.java.en.When;
 public class ParentProfileSteps extends WebDriverManager {
 	WebDriver driver;
 
-	@When("^Click on Add Child button&")
+	@When("^Click on Add Child button$")
 	public void navigateTo(String profilName) {
 		ParentProfilePage parentProfilePage = new ParentProfilePage(getDriver());
 		parentProfilePage.clickOnAddChildOnParentProfile();

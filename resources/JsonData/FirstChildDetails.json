@@ -1,0 +1,14 @@
+//https://www.geeksforgeeks.org/parse-json-java/
+{
+	"QA": {
+		"ChildName":"TestAutomationChild",
+		"DOB": "28-December-2018",
+		"Gender": "Male",
+		"Religion": "Hindu",
+		"MotherTounge": "Marathi",
+		"SpokenLanguage": "Marathi",
+		"Address": "Test123, Automation",
+		"Country": "India",
+		"ZipCode": 421605
+	}
+}

@@ -26,20 +26,31 @@ public class SpedDashobardPage extends PageFactory {
 	@FindBy(xpath = "//*[@id='welcome-modal-title' and contains(text(),'Hello,')]")
 	WebElement newParentDashboard;
 	
+	@FindBy(xpath = "//*[contains(text(),'Hi Child')]")
+	WebElement existingParentDashboard;
+	
 	@FindBy(xpath = "//*[contains(@class,'nav nav-pills')][1]")
-	WebElement OTCoachDashboard;
-
+	WebElement coachDashboard;
+	
+	@FindBy(xpath = "//div[contains(@class,'coach-dashboard_status')]")
+	WebElement coachStatus;
 	
 	public void verifyNewParentDashboardIsDisplayed(){
 		spedUtility.isElementDisplayed(newParentDashboard);
 	}
 	
+	public void verifyExistingParentDashboardIsDisplayed(){
+		spedUtility.isElementDisplayed(existingParentDashboard);
+	}
+	
 	public void verifyRemedialCoachDasboard(){
-		//spedUtility.isElementDisplayed(OTCoachDashboard);
+		spedUtility.isElementDisplayed(coachDashboard);
+		spedUtility.isElementDisplayed(coachStatus);
 	}
 	
 	public void verifyOTCoachDasboard(){
-		spedUtility.isElementDisplayed(OTCoachDashboard);
+		spedUtility.isElementDisplayed(coachDashboard);
+		spedUtility.isElementDisplayed(coachStatus);
 	}
 	
 	public void clickOnTitle(){

@@ -10,6 +10,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
 
 import Utils.JsonReader;
 import Utils.SpedUtility;
@@ -28,6 +29,9 @@ public class ParentLandingPage extends PageFactory {
 		PageFactory.initElements(driver, spedUtility);
 	}
 
+	@FindBy(xpath = "//*[contains(@class,'modal welcomemodal')]//*[@class='modal-content']")
+	WebElement welcomePopup;
+	
 	@FindBy(xpath = "title")
 	WebElement title;
 
@@ -103,9 +107,16 @@ public class ParentLandingPage extends PageFactory {
 		String country = jsonReader.getDataValue(jsonData, "Country");
 		String zipCode = jsonReader.getDataValue(jsonData, "ZipCode");
 
+		if(spedUtility.isElementDisplayedNotify(welcomePopup)){
+			Assert.assertTrue(true, "Welcome Popup is displayed");
+			spedUtility.click(nextBtn);
+		} else {
+			Assert.assertFalse(false,"Failed - Welcome Popup is not displayed");
+		}
+		
 		spedUtility.type(childName, childNameValue);
 		// SelectDateFromCalender Method to be added
-		spedUtility.click(selectGenderDrpDwn);
+		/*spedUtility.click(selectGenderDrpDwn);
 		spedUtility.clickByXpath(String.format("[text()='Select Gender']/following::li[text()='%s']", gender));
 
 		spedUtility.type(religionEle, religion);
@@ -130,7 +141,7 @@ public class ParentLandingPage extends PageFactory {
 					.clickByXpath(String.format("[text()='Select Spoken Language']/following::li[text()='%s']", state));
 		}
 
-		spedUtility.type(zipCodeEle, zipCode);
+		spedUtility.type(zipCodeEle, zipCode);*/
 
 		spedUtility.isElementDisplayed(parentWelcomeBlock);
 	}

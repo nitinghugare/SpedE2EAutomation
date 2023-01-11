@@ -1,0 +1,242 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Verify Login with New Parent Credentials",
+        "description": "",
+        "id": "test-scenario;verify-login-with-new-parent-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2671932700,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Open browser and enter URL",
+            "match": {
+              "location": "CommonSteps.openBrowserAndEnterUrl()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 323054300,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User enters \"parent1234@gmail.com\" and \"Suresh@123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "parent1234@gmail.com",
+                  "offset": 13
+                },
+                {
+                  "val": "Suresh@123",
+                  "offset": 40
+                }
+              ],
+              "location": "LoginSteps.user_enters_and(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5076792300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "Clicked on login button",
+            "match": {
+              "location": "LoginSteps.click_on_login_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 47661000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Parent Setup Dashboard should display for new user",
+            "match": {
+              "location": "LoginSteps.verifyParentDashboardForNewUser()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TestDemo"
+          }
+        ]
+      },
+      {
+        "line": 11,
+        "name": "Verify Login with Remedial Coach Credentials",
+        "description": "",
+        "id": "test-scenario;verify-login-with-remedial-coach-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 204467500,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "Open browser and enter URL",
+            "match": {
+              "location": "CommonSteps.openBrowserAndEnterUrl()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 260397600,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User enters \"suresh.patil@spedathome.com\" and \"Suresh@123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "suresh.patil@spedathome.com",
+                  "offset": 13
+                },
+                {
+                  "val": "Suresh@123",
+                  "offset": 47
+                }
+              ],
+              "location": "LoginSteps.user_enters_and(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5089722300,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Clicked on login button",
+            "match": {
+              "location": "LoginSteps.click_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 110240200,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Remedial Coach dashboard should display",
+            "match": {
+              "location": "LoginSteps.verifyRemedialCoachDashboard()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TestDemo"
+          }
+        ]
+      },
+      {
+        "line": 18,
+        "name": "Verify Login with OT Coach Credentials",
+        "description": "",
+        "id": "test-scenario;verify-login-with-ot-coach-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 191154700,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Open browser and enter URL",
+            "match": {
+              "location": "CommonSteps.openBrowserAndEnterUrl()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 260780900,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "User enters \"harshil.panchal@spedathome.com\" and \"OT@123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "harshil.panchal@spedathome.com",
+                  "offset": 13
+                },
+                {
+                  "val": "OT@123",
+                  "offset": 50
+                }
+              ],
+              "location": "LoginSteps.user_enters_and(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5076205900,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Clicked on login button",
+            "match": {
+              "location": "LoginSteps.click_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//*[contains(@class,\u0027nav nav-pills\u0027)][1]\"}\n  (Session info: chrome\u003d108.0.5359.126)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: \u00274.1.1\u0027, revision: \u0027e8fcc2cecf\u0027\nSystem info: host: \u0027LAPTOP-C379US1T\u0027, ip: \u0027192.168.68.138\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_251\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [c120f1e5919991eecc246446ef0d7dd2, findElement {using\u003dxpath, value\u003d//*[contains(@class,\u0027nav nav-pills\u0027)][1]}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.126, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\\Users\\nitin\\AppData\\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59158}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59158/devtoo..., se:cdpVersion: 108.0.5359.126, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: c120f1e5919991eecc246446ef0d7dd2\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)\r\n\tat java.lang.reflect.Constructor.newInstance(Unknown Source)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)\r\n\tat com.sun.proxy.$Proxy24.isDisplayed(Unknown Source)\r\n\tat Utils.SpedUtility.isElementDisplayed(SpedUtility.java:54)\r\n\tat com.spedtestautomation.Pages.SpedDashobardPage.verifyOTCoachDasboard(SpedDashobardPage.java:52)\r\n\tat com.spedtestautomation.StepDef.LoginSteps.verifyOTCoachDashboard(LoginSteps.java:59)\r\n\tat ✽.OT Coach dashboard should display(./features/Demo.feature:23)\r\n",
+              "duration": 17666700,
+              "status": "failed"
+            },
+            "line": 23,
+            "name": "OT Coach dashboard should display",
+            "match": {
+              "location": "LoginSteps.verifyOTCoachDashboard()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TestDemo"
+          }
+        ]
+      }
+    ],
+    "name": "Test scenario",
+    "description": "",
+    "id": "test-scenario",
+    "keyword": "Feature",
+    "uri": "./features/Demo.feature",
+    "tags": [
+      {
+        "name": "@TestDemo",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]

@@ -12,20 +12,21 @@ import com.spedtestautomation.Pages.ParentDashboardPage;
 import com.spedtestautomation.Pages.ParentLandingPage;
 
 import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
 public class AddChildSteps extends WebDriverManager {
 	WebDriver driver;
 
-	/* Need to Check Compilation error
-	@Given("^Add new Child {ChildData} from the popup&")
+	// Need to Check Compilation error
+	@Then("^Add new Child \"([^\"]*)\" from the popup$")
 	public void addChildDetails(String dataFileName) throws FileNotFoundException, IOException, ParseException {
 		ParentLandingPage parentLandingPage = new ParentLandingPage(getDriver());
 		parentLandingPage.addChildDetails(dataFileName);
 		parentLandingPage.clickOnAddChildBtn();
-	}*/
+	}
 	
-	@When("^Child is added for existing parent user through parent dashboard")
+	@When("^Child is added for existing parent user through parent dashboard$")
 	public void addChildFromParentDashboard(String dataFileName) throws FileNotFoundException, IOException, ParseException {
 		ParentLandingPage parentLandingPage = new ParentLandingPage(getDriver());
 		ParentDashboardPage parentDashboardPage = new ParentDashboardPage(getDriver());
@@ -37,7 +38,7 @@ public class AddChildSteps extends WebDriverManager {
 		parentLandingPage.clickOnAddChildBtn();
 	}
 	
-	@Given("^Verify new child is added from parent dashboard&")
+	@Given("^Verify new child is added from parent dashboard$")
 	public void verifyNewChildIsAdded(String dataFileName) throws FileNotFoundException, IOException, ParseException {
 		ParentDashboardPage parentDashboardPage = new ParentDashboardPage(getDriver());
 		parentDashboardPage.verifyBothChildsAddedOnParentDashboard();

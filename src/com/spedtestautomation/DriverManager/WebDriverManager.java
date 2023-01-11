@@ -2,19 +2,18 @@ package com.spedtestautomation.DriverManager;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 
 import Utils.DriverUtils;
 import Utils.SpedUtility;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
 
-public abstract class WebDriverManager {
+public class WebDriverManager extends AbstractTestNGCucumberTests{
 
 	public static WebDriver driver;
 
-	@BeforeSuite
+
+	@BeforeTest
 	public void webdriverSetUp() {
 		System.out.println("+++++> Insider Before Suite");
 		driver = DriverUtils.getDriver("chrome");
@@ -22,12 +21,13 @@ public abstract class WebDriverManager {
 		SpedUtility spedUtility = new SpedUtility(driver);
 	}
 	
-	/*@AfterTest
+	@AfterTest
 	public void cleanWebDriver() {
 		driver.close();
-	}*/
-	@BeforeMethod
+	}
+	
 	public static WebDriver getDriver() {
 		return driver;
 	}
+	
 }

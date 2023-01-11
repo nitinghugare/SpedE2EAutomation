@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="5225" started-at="2022-12-07T14:49:21Z" finished-at="2022-12-07T14:49:26Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.spedtestautomation.TestRunner.TestRunner@31ef45e3]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Test" duration-ms="5225" started-at="2022-12-07T14:49:21Z" finished-at="2022-12-07T14:49:26Z">
+      <class name="com.spedtestautomation.TestRunner.TestRunner">
+        <test-method status="PASS" signature="webdriverSetUp()[pri:0, instance:com.spedtestautomation.TestRunner.TestRunner@31ef45e3]" name="webdriverSetUp" is-config="true" duration-ms="3108" started-at="2022-12-07T14:49:18Z" finished-at="2022-12-07T14:49:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- webdriverSetUp -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.spedtestautomation.TestRunner.TestRunner@31ef45e3]" name="setUpClass" is-config="true" duration-ms="148" started-at="2022-12-07T14:49:21Z" depends-on-methods="com.spedtestautomation.DriverManager.WebDriverManager.webdriverSetUp" finished-at="2022-12-07T14:49:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.spedtestautomation.TestRunner.TestRunner@31ef45e3]" name="feature" duration-ms="4910" started-at="2022-12-07T14:49:21Z" data-provider="features" finished-at="2022-12-07T14:49:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify Login with New Parent Credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test scenario"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="getDriver()[pri:0, instance:com.spedtestautomation.TestRunner.TestRunner@31ef45e3]" name="getDriver" is-config="true" duration-ms="0" started-at="2022-12-07T14:49:21Z" finished-at="2022-12-07T14:49:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDriver -->
+        <test-method status="PASS" signature="getDriver()[pri:0, instance:com.spedtestautomation.TestRunner.TestRunner@31ef45e3]" name="getDriver" is-config="true" duration-ms="0" started-at="2022-12-07T14:49:26Z" finished-at="2022-12-07T14:49:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDriver -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.spedtestautomation.TestRunner.TestRunner@31ef45e3]" name="feature" duration-ms="226" started-at="2022-12-07T14:49:26Z" data-provider="features" finished-at="2022-12-07T14:49:26Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify Login with New Parent Credentials"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Test scenario"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.spedtestautomation.TestRunner.TestRunner@31ef45e3]" name="tearDownClass" is-config="true" duration-ms="32" started-at="2022-12-07T14:49:26Z" finished-at="2022-12-07T14:49:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.spedtestautomation.TestRunner.TestRunner -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
