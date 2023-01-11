@@ -1,8 +1,0 @@
-//https://www.geeksforgeeks.org/parse-json-java/
-{
-	"QA": {
-		"city": "New York",
-		"state": "NY",
-		"postalCode": 10021
-	}
-}

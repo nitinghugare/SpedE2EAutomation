@@ -6,9 +6,9 @@ import java.util.logging.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class SpedUtility extends PageFactory{
@@ -72,9 +72,5 @@ public class SpedUtility extends PageFactory{
 		}
 	}
 
-	public void selectFromDropdwonByText(WebElement element,String text){
-		seleniumWait(element);
-		Select drpdwnEle = new Select(element);
-		drpdwnEle.selectByValue(text);
-	}
+
 }

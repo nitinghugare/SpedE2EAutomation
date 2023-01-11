@@ -8,7 +8,6 @@ import com.spedtestautomation.Pages.ParentDashboardPage;
 import com.spedtestautomation.Pages.ParentLandingPage;
 
 import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
 
 public class ParenDashboardSteps extends WebDriverManager {
 	WebDriver driver;
@@ -27,10 +26,10 @@ public class ParenDashboardSteps extends WebDriverManager {
 	}
 	
 	 //* Need to check compilation error
-	@When("^Navigated to \"([^\"]*)\"$")
+	/*@When("^Navigated to {ProfileName}&")
 	public void navigateTo(String profilName) {
 		ParentDashboardPage parentDashboardPage = new ParentDashboardPage(getDriver());
 		parentDashboardPage.NavigateTo(profilName);
-	}
+	}*/
 	
 }

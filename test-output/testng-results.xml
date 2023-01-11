@@ -1,24 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="3" passed="2">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="35912" started-at="2023-01-11T08:46:36Z" finished-at="2023-01-11T08:47:12Z">
+  <suite name="Default suite" duration-ms="23841" started-at="2022-12-02T15:30:15Z" finished-at="2022-12-02T15:30:39Z">
     <groups>
-      <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.spedtestautomation.TestRunner.TestRunner@551aa95a]" name="runScenario" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
-      </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="35912" started-at="2023-01-11T08:46:36Z" finished-at="2023-01-11T08:47:12Z">
+    <test name="Default test" duration-ms="23841" started-at="2022-12-02T15:30:15Z" finished-at="2022-12-02T15:30:39Z">
       <class name="com.spedtestautomation.TestRunner.TestRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.spedtestautomation.TestRunner.TestRunner@551aa95a]" name="setUpClass" is-config="true" duration-ms="143" started-at="2023-01-11T14:16:36Z" finished-at="2023-01-11T14:16:36Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="webdriverSetUp()[pri:0, instance:com.spedtestautomation.TestRunner.TestRunner@551aa95a]" name="webdriverSetUp" is-config="true" duration-ms="3259" started-at="2023-01-11T14:16:36Z" finished-at="2023-01-11T14:16:40Z">
+        <test-method status="PASS" signature="webdriverSetUp()[pri:0, instance:com.spedtestautomation.TestRunner.TestRunner@627551fb]" name="webdriverSetUp" is-config="true" duration-ms="5284" started-at="2022-12-02T21:00:09Z" finished-at="2022-12-02T21:00:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- webdriverSetUp -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.spedtestautomation.TestRunner.TestRunner@551aa95a]" name="feature" duration-ms="8316" started-at="2023-01-11T14:16:40Z" data-provider="features" finished-at="2023-01-11T14:16:48Z">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.spedtestautomation.TestRunner.TestRunner@627551fb]" name="setUpClass" is-config="true" duration-ms="388" started-at="2022-12-02T21:00:15Z" depends-on-methods="com.spedtestautomation.DriverManager.WebDriverManager.webdriverSetUp" finished-at="2022-12-02T21:00:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="getDriver()[pri:0, instance:com.spedtestautomation.TestRunner.TestRunner@627551fb]" name="getDriver" is-config="true" duration-ms="0" started-at="2022-12-02T21:00:15Z" finished-at="2022-12-02T21:00:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDriver -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.spedtestautomation.TestRunner.TestRunner@627551fb]" name="feature" duration-ms="6570" started-at="2022-12-02T21:00:15Z" data-provider="features" finished-at="2022-12-02T21:00:22Z">
           <params>
             <param index="0">
               <value>
@@ -34,11 +35,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="PASS" signature="feature(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.spedtestautomation.TestRunner.TestRunner@551aa95a]" name="feature" duration-ms="7539" started-at="2023-01-11T14:16:48Z" data-provider="features" finished-at="2023-01-11T14:16:56Z">
+        <test-method status="PASS" signature="getDriver()[pri:0, instance:com.spedtestautomation.TestRunner.TestRunner@627551fb]" name="getDriver" is-config="true" duration-ms="1" started-at="2022-12-02T21:00:22Z" finished-at="2022-12-02T21:00:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getDriver -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.spedtestautomation.TestRunner.TestRunner@627551fb]" name="feature" duration-ms="17028" started-at="2022-12-02T21:00:22Z" data-provider="features" finished-at="2022-12-02T21:00:39Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Verify Login with Remedial Coach Credentials"]]>
+                <![CDATA["Verify Login with New Parent Credentials"]]>
               </value>
             </param>
             <param index="1">
@@ -50,70 +55,10 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- feature -->
-        <test-method status="FAIL" signature="feature(cucumber.api.testng.PickleEventWrapper, cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:com.spedtestautomation.TestRunner.TestRunner@551aa95a]" name="feature" duration-ms="380" started-at="2023-01-11T14:16:56Z" data-provider="features" finished-at="2023-01-11T14:16:56Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify Login with OT Coach Credentials"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Test scenario"]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.WebDriverException">
-            <message>
-              <![CDATA[unknown error: failed to change window state to 'normal', current state is 'maximized'
-  (Session info: chrome=108.0.5359.126)
-Build info: version: '4.1.1', revision: 'e8fcc2cecf'
-System info: host: 'LAPTOP-C379US1T', ip: '192.168.68.138', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9beca40821ca65873c5b44ff66b8e2cf, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.126, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\nitin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59063}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59063/devtoo..., se:cdpVersion: 108.0.5359.126, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 9beca40821ca65873c5b44ff66b8e2cf]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: unknown error: failed to change window state to 'normal', current state is 'maximized'
-  (Session info: chrome=108.0.5359.126)
-Build info: version: '4.1.1', revision: 'e8fcc2cecf'
-System info: host: 'LAPTOP-C379US1T', ip: '192.168.68.138', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_251'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9beca40821ca65873c5b44ff66b8e2cf, maximizeCurrentWindow {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.126, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\nitin\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:59063}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:59063/devtoo..., se:cdpVersion: 108.0.5359.126, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 9beca40821ca65873c5b44ff66b8e2cf
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:969)
-	at Utils.SpedUtility.getURL(SpedUtility.java:25)
-	at com.spedtestautomation.StepDef.CommonSteps.openBrowserAndEnterUrl(CommonSteps.java:21)
-	at ✽.Open browser and enter URL(./features/Demo.feature:19)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- feature -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.spedtestautomation.TestRunner.TestRunner@551aa95a]" name="tearDownClass" is-config="true" duration-ms="38" started-at="2023-01-11T14:16:56Z" finished-at="2023-01-11T14:16:56Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.spedtestautomation.TestRunner.TestRunner@627551fb]" name="tearDownClass" is-config="true" duration-ms="20" started-at="2022-12-02T21:00:39Z" finished-at="2022-12-02T21:00:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
-        <test-method status="PASS" signature="cleanWebDriver()[pri:0, instance:com.spedtestautomation.TestRunner.TestRunner@551aa95a]" name="cleanWebDriver" is-config="true" duration-ms="16278" started-at="2023-01-11T14:16:56Z" finished-at="2023-01-11T14:17:12Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- cleanWebDriver -->
       </class> <!-- com.spedtestautomation.TestRunner.TestRunner -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
